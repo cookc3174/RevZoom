@@ -9,7 +9,7 @@ import org.jfree.ui.RefineryUtilities;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
  
-public class carGraphs extends ApplicationFrame {
+public class carGraphs2 extends ApplicationFrame {
     
     public ArrayList<String> makeGraphsMain = new ArrayList<String>();
 	public ArrayList<String> modelGraphsMain = new ArrayList<String>();
@@ -20,13 +20,13 @@ public class carGraphs extends ApplicationFrame {
     
     
     // Code for setting up plot frame
-    public carGraphs( String applicationTitle , String chartTitle ) {
+    public carGraphs2( String applicationTitle , String chartTitle ) {
         super(applicationTitle);
         
         // Graph 1
         JFreeChart lineChart = ChartFactory.createLineChart(
            chartTitle,
-           "Challenger Car Years","Ratings",
+           "Mustang Car Years","Ratings",
            createDataset(),
            PlotOrientation.VERTICAL,
            true,true,false);
@@ -45,37 +45,37 @@ public class carGraphs extends ApplicationFrame {
         CE.mainRun();
         
         // Display content for dodge makes in database
-        System.out.println("Makes: " + carsTransfer.arDodge);
-        System.out.println("Models: " + carsTransfer.arDodgeModels);
-        System.out.println("Years: " + carsTransfer.arDodgeYears);
-        System.out.println("RevRating: " + carsTransfer.arDodgeRevRating);
-        System.out.println("CarsRating: " + carsTransfer.arDodgeCarsRating);
-        System.out.println("Accuracy: " + carsTransfer.arDodgeAccuracy);
+        System.out.println("Makes: " + carsTransfer.arFord);
+        System.out.println("Models: " + carsTransfer.arFordModels);
+        System.out.println("Years: " + carsTransfer.arFordYears);
+        System.out.println("RevRating: " + carsTransfer.arFordRevRating);
+        System.out.println("CarsRating: " + carsTransfer.arFordCarsRating);
+        System.out.println("Accuracy: " + carsTransfer.arFordAccuracy);
         
-        ArrayList<String> dodgeTestList = new ArrayList();
+        ArrayList<String> fordTestList = new ArrayList();
         
         while(true) {
         while(true) {
-        	for (int models = 0; models < carsTransfer.arDodgeModels.size() ; models++) {
-        		if (carsTransfer.arDodgeModels.get(models).equals("challenger")) {
-        			dodgeTestList.add(carsTransfer.arDodgeModels.get(models));
-        			for(int newDodge = 0; newDodge < dodgeTestList.size(); newDodge++) {
-        				for(int rev = 0; rev < dodgeTestList.size(); rev++) {
+        	for (int models = 0; models < carsTransfer.arFordModels.size() ; models++) {
+        		if (carsTransfer.arFordModels.get(models).equals("mustang")) {
+        			fordTestList.add(carsTransfer.arFordModels.get(models));
+        			for(int newFord = 0; newFord < fordTestList.size(); newFord++) {
+        				for(int rev = 0; rev < fordTestList.size(); rev++) {
         						if(rev == 0) {
-        							dataset.addValue(carsTransfer.arDodgeRevRating.get(rev), "RevZoom", "2017");
-        							dataset.addValue(carsTransfer.arDodgeCarsRating.get(rev), "Cars.com", "2017");
+        							dataset.addValue(carsTransfer.arFordRevRating.get(rev), "RevZoom", "2017");
+        							dataset.addValue(carsTransfer.arFordCarsRating.get(rev), "Cars.com", "2017");
         						}
         						else if(rev == 1) {
-        							dataset.addValue(carsTransfer.arDodgeRevRating.get(rev), "RevZoom", "2018");
-        							dataset.addValue(carsTransfer.arDodgeCarsRating.get(rev), "Cars.com", "2018");
+        							dataset.addValue(carsTransfer.arFordRevRating.get(rev), "RevZoom", "2018");
+        							dataset.addValue(carsTransfer.arFordCarsRating.get(rev), "Cars.com", "2018");
         						}
         						else if (rev == 2) {
-        							dataset.addValue(carsTransfer.arDodgeRevRating.get(rev), "RevZoom", "2019");
-        							dataset.addValue(carsTransfer.arDodgeCarsRating.get(rev), "Cars.com", "2019");
+        							dataset.addValue(carsTransfer.arFordRevRating.get(rev), "RevZoom", "2019");
+        							dataset.addValue(carsTransfer.arFordCarsRating.get(rev), "Cars.com", "2019");
         						}
         						else if (rev == 3) { 
-        							dataset.addValue(carsTransfer.arDodgeRevRating.get(rev), "RevZoom", "2020");
-        							dataset.addValue(carsTransfer.arDodgeCarsRating.get(rev), "Cars.com", "2020");
+        							dataset.addValue(carsTransfer.arFordRevRating.get(rev), "RevZoom", "2020");
+        							dataset.addValue(carsTransfer.arFordCarsRating.get(rev), "Cars.com", "2020");
         						}
         						
         						else {
@@ -111,11 +111,11 @@ public class carGraphs extends ApplicationFrame {
         
      }
     
-    public static void mainTest1() {
+    public static void mainTest2() {
         // Code for plots
-        carGraphs chart = new carGraphs(
+        carGraphs2 chart = new carGraphs2(
                 "RevZoom" ,
-                "Challenger - RevZoom Ratings vs Cars.com Ratings");
+                "Mustang - RevZoom Ratings vs Cars.com Ratings");
 
              chart.pack( );
              RefineryUtilities.centerFrameOnScreen( chart );
