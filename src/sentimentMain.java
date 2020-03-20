@@ -63,8 +63,7 @@ public class sentimentMain {
 				//System.out.println("Graphs");
 				
 				// Code for printing out graphs
-				carsExtract CE = new carsExtract();
-				CE.mainRun();
+				graphDriver.driverClass();
 				
 			}
 		
