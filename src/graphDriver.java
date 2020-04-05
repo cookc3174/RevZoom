@@ -58,6 +58,18 @@ public class graphDriver {
 				break;
 			}
 			
+			else if (input.equals("graph8")) {
+				System.out.println("Graph 8 content: ");
+				carGraphs8.mainTest8();
+				break;
+			}
+			
+			else if (input.equals("graph9")) {
+				System.out.println("Graph 9 content: ");
+				carGraphs9.mainTest9();
+				break;
+			}
+			
 			else {
 				System.out.println("Command not recognized...");
 			}

@@ -324,6 +324,18 @@ public class carsExtract {
         		chevyTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
         		break;
         	}
+        	else if (GD.input.equals("graph8")) {
+        		dodgeTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
+        		fordTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
+        		chevyTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
+        		break;
+        	}
+        	else if (GD.input.equals("graph9")) {
+        		dodgeTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
+        		fordTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
+        		chevyTest(makeGraphsCEMain3, modelGraphsCEMain3, yearGraphsCEMain3, revratingGraphsCEMain3, carsratingGraphsCEMain3, accuracyGraphsCEMain3);
+        		break;
+        	}
         	else {
         		System.out.println("You did not enter a valid plot command.");
         	
