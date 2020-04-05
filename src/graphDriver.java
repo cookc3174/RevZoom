@@ -11,9 +11,9 @@ public class graphDriver {
 			
 			System.out.println("Commands for graphs:");
 			System.out.println("Enter the command (graph) + a number from 1-7.");
-			System.out.println("Example commmand: (graph1)");
+			System.out.println("Example command: (graph1)");
 	
-			System.out.println("What graph would you like to see: ");
+			System.out.println("What graph would you like to see?: ");
 			input = scan.nextLine();
 			
 			if (input.equals("graph1")) {
@@ -54,7 +54,7 @@ public class graphDriver {
 			
 			else if (input.equals("graph7")) {
 				System.out.println("Graph 7 content: ");
-				
+				carGraphs7.mainTest7();
 				break;
 			}
 			

@@ -31,6 +31,9 @@ public class sentimentMain {
 		while(outsideStatus.equals("yes")) {
 		
 			System.out.println("Do you want to update the database or see the graphs? ");
+			System.out.println("Commands: ");
+			System.out.println("update - used to update database");
+			System.out.println("graphs - used to view graphs");
 			System.out.println("Type (exit) to end program");
 			userOption = scan.nextLine();
 		
@@ -68,7 +71,7 @@ public class sentimentMain {
 			}
 		
 			else if (userOption.equals("exit")){
-				System.out.println("Do you want to exit?");
+				System.out.println("Do you want to exit (yes) or (no)?");
 				exitOption = scan.nextLine();
 				if (exitOption.equals("yes"))
 					break;
