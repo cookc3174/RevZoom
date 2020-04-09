@@ -9,18 +9,19 @@ RevZoom has three main areas that all require certain individual libraries. The 
 Jsoup. The sentiment analysis portion requires libraries from Stanford CoreNLP and SQLite3 is needed to store the values that 
 come from this section. The visualization and graphs require libraries from JFreeCharts. Each of the links to these libraries are listed below:
 
-Jsoup: https://jsoup.org/download
-Stanford CoreNLP: https://stanfordnlp.github.io/CoreNLP/download.html
-JFreeCharts: http://www.jfree.org/jfreechart/download.html
-SQLite3: https://sqlite.org/download.html
+- Jsoup: https://jsoup.org/download
+- Stanford CoreNLP: https://stanfordnlp.github.io/CoreNLP/download.html
+- JFreeCharts: http://www.jfree.org/jfreechart/download.html
+- SQLite3: https://sqlite.org/download.html
 
 What specific libraries you need:
-![Logo](reqFiles.png)
+
+![Logo](reqFiles.PNG)
 
 #### Guide to RevZoom
 
 Commands:
 
-update - allows a user to add a car to the local database
-graphs - displays visuals of the results generated from RevZoom
-exit - closes the program
+- update: allows a user to add a car to the local database
+- graphs: displays visuals of the results generated from RevZoom
+- exit: closes the program
